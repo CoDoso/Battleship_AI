@@ -43,12 +43,12 @@ def create_map(Map):
           for i in range(Ship):
             match Direction:
               case 0:
-                Map[Starting_Point[1]+i][Starting_Point[0]] = Ship:
+                Map[Starting_Point[1]+i][Starting_Point[0]] = Ship
               case 1:
-                Map[Starting_Point[1]][Starting_Point[0]+i] = Ship:
+                Map[Starting_Point[1]][Starting_Point[0]+i] = Ship
               case 2:
-                Map[Starting_Point[1]-i][Starting_Point[0]] = Ship:
+                Map[Starting_Point[1]-i][Starting_Point[0]] = Ship
               case 3:
-                Map[Starting_Point[1]+i][Starting_Point[0]-1] = Ship:
+                Map[Starting_Point[1]+i][Starting_Point[0]-1] = Ship
           break
   return Map

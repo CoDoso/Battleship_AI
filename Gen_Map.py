@@ -3,7 +3,7 @@ import random
 
 def create_map(Map):
   
-  for i in range(9):
+  for i in range(10):
     Map.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])  # 10x10 Grid creation
 
   for Ship in [5, 4, 3, 3, 2]:  # Classic Ships

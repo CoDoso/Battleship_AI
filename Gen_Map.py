@@ -1,10 +1,16 @@
 import random
 
 
+ # 10x10 Grid creation
+def create_Grid():   
+  Grid = []
+  for i in range(10):
+    Grid.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])   
+  return Grid
+
 def create_map(Map):
   
-  for i in range(10):
-    Map.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])  # 10x10 Grid creation
+  Map = create_Grid()
 
   for Ship in [5, 4, 3, 3, 2]:  # Classic Ships
     while True:
